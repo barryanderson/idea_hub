@@ -17,6 +17,7 @@ defmodule IdeaHubWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+    resources "/ideas", IdeaController
   end
 
   # Other scopes may use custom stacks.

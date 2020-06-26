@@ -1,0 +1,23 @@
+<h1>Show Idea</h1>
+
+<ul>
+
+  <li>
+    <strong>Comment:</strong>
+    <%= @idea.comment %>
+  </li>
+
+  <li>
+    <strong>Status:</strong>
+    <%= @idea.status %>
+  </li>
+
+  <li>
+    <strong>Open:</strong>
+    <%= @idea.open %>
+  </li>
+
+</ul>
+
+<span><%= link "Edit", to: Routes.idea_path(@conn, :edit, @idea) %></span>
+<span><%= link "Back", to: Routes.idea_path(@conn, :index) %></span>
